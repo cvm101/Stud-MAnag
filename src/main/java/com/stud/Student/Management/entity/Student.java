@@ -21,12 +21,12 @@ public class Student {
     @Column(unique = true, nullable = false)
     private String email;
 
-    private String Address;
+//    private String Address;
 
     private LocalDate dob;
 
     @ManyToOne
-    @JoinColumn(name = "academy_id", nullable = false)
+    @JoinColumn(name = "academy_id", nullable = true)
     private Academy academy;
 
     @ManyToMany
